@@ -1,6 +1,8 @@
 # react-native-effect-ui
 for react-native beginner to learn 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/8ZICC_4nP7I/0.jpg)](https://www.youtube.com/watch?v=8ZICC_4nP7I)
+
 effect-ui write with react-native
 ========================
 
