@@ -24,6 +24,7 @@ $ brew install watchman
 ```
 $ cd react-native-effect-ui
 $ npm install
+$ react-native link
 $ ./build.sh
 ```
 
