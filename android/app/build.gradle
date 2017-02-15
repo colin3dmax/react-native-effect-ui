@@ -110,21 +110,6 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
-    signingConfigs {
-        release {
-            storeFile file(APP_RELEASE_STORE_FILE)
-            storePassword APP_RELEASE_STORE_PASSWORD
-            keyAlias APP_RELEASE_KEY_ALIAS
-            keyPassword APP_RELEASE_KEY_PASSWORD
-        }
-    }
-    buildTypes {
-        release {
-            signingConfig signingConfigs.release
-            minifyEnabled enableProguardInReleaseBuilds
-            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-        }
-    }
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
@@ -141,9 +126,6 @@ android {
 }
 
 dependencies {
-    compile project(':react-native-share')
-    compile project(':react-native-linear-gradient')
-    compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
     compile "com.facebook.react:react-native:+"  // From node_modules
